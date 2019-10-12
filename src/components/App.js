@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='background'>
         <h2>Music Master</h2>
         <Search searchArtist={this.searchArtist} />
         <Artist artist={this.state.artist} />

@@ -24363,7 +24363,9 @@ function (_Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h2", null, "Music Master"), _react.default.createElement(_Search.default, {
+      return _react.default.createElement("div", {
+        className: "background"
+      }, _react.default.createElement("h2", null, "Music Master"), _react.default.createElement(_Search.default, {
         searchArtist: this.searchArtist
       }), _react.default.createElement(_Artist.default, {
         artist: this.state.artist
@@ -24491,7 +24493,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54540" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61430" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
